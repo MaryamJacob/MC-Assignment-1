@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Profile"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select the problem type that best describes your situation."
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rgProblemTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbMentalHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mental Health" />
+
+        <RadioButton
+            android:id="@+id/rbGrief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grief" />
+
+        <RadioButton
+            android:id="@+id/rbCareer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Career" />
+
+        <RadioButton
+            android:id="@+id/rbEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+</LinearLayout>
